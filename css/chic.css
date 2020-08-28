@@ -65,9 +65,10 @@ h2 {
   .step img {
     height: 30px;
     width: 30%;
-    padding-top: 10px; }
+    padding-top: 20px; }
   .step p {
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 10px; }
 
 .dishes {
   width: 70%; }
