@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Food";
+  src: url(../fonts/colon.ttf) format("truetype"); }
+@font-face {
+  font-family: "chic";
+  src: url(../fonts/CroissantOne-Regular.ttf) format("truetype"); }
+@font-face {
+  font-family: "Segoe";
+  src: url(../fonts/Segoe_Print.ttf) format("truetype"); }
+@keyframes wiggle {
+  0% {
+    transform: translateX(2px); }
+  100% {
+    transform: translateX(-2px); } }
+body {
+  margin: 0; }
+
+/* ------------------------------------------- header ------------------------------------------- */
+h1 {
+  background-color: #579c87;
+  color: #fdcb46;
+  text-align: center;
+  padding: 40px;
+  font-size: 3em;
+  margin-top: 0;
+  font-family: "food";
+  letter-spacing: 3px; }
+  h1 a {
+    text-decoration: none;
+    color: #fdcb46; }
+
+/* ------------------------------------------- menus ------------------------------------------- */
+.card {
+  margin: auto auto 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  box-shadow: 0px 0px 15px 5px #d0d0d0;
+  padding-bottom: 200px; }
+
+h3 {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: normal; }
+
+p {
+  font-family: "Segoe";
+  font-size: 1.1em; }
+
+h2 {
+  font-family: "chic";
+  font-weight: normal;
+  margin-top: 120px;
+  background: -webkit-linear-gradient(left, #D8852E, #8F5BFE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5em; }
+
+.step {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%; }
+  .step img {
+    height: 30px;
+    width: 30%;
+    padding-top: 10px; }
+  .step p {
+    font-weight: bold; }
+
+.dishes {
+  width: 70%; }
+  .dishes p {
+    margin: 10px; }
+
+.plat {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.orange {
+  color: #D8852E; }
+
+.purple {
+  color: #A56799; }
+
+.blue {
+  color: #6E4CCC; }
+
+.step.orange p:after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: #D8852E;
+  transition: width 300ms ease;
+  width: 0; }
+
+.orange p:hover:after {
+  width: 100%; }
+
+.step.purple p:after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: #A56799;
+  transition: width 300ms ease;
+  width: 0; }
+
+.purple p:hover:after {
+  width: 100%; }
+
+.step.blue p:after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: #6E4CCC;
+  transition: width 300ms ease;
+  width: 0; }
+
+.blue p:hover:after {
+  width: 100%; }
+
+/* ------------------------------------------- footer ------------------------------------------- */
+footer {
+  background-color: #579c87;
+  color: #fdcb46;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0; }
+  footer a {
+    text-decoration: none;
+    color: #fdcb46; }
+  footer a {
+    padding: 18px 30px;
+    background-color: #579c87;
+    color: #fdcb46; }
+    footer a a {
+      text-decoration: none;
+      color: #fdcb46; }
+    footer a:hover {
+      animation: wiggle 300ms backwards ease-in-out infinite alternate; }
+
+/*# sourceMappingURL=chic.css.map */

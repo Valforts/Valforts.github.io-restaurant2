@@ -1,0 +1,155 @@
+$text-color:rgb(253,203,70);
+$bck-color:rgb(87,156,135);
+$hover-color:rgb(252,223,219);
+
+@font-face {
+	font-family:"Food";
+	src: url(../fonts/colon.ttf) format("truetype");
+}
+
+@font-face {
+	font-family:"délice";
+	src: url(../fonts/dancing-script-ot.ttf) format("truetype");
+}
+
+@font-face {
+	font-family:"Segoe";
+	src: url(../fonts/Segoe_Print.ttf) format("truetype");
+}
+
+@mixin color{
+	background-color: $bck-color;
+	color: $text-color;
+	a{
+		color: $text-color;
+		text-decoration: none;
+	}
+}
+
+@keyframes wiggle{
+	0%{
+		transform: translateX(2px)
+	}
+
+	100%{
+		transform: translateX(-2px)
+	}
+}
+
+body{
+	margin: 0;
+}
+
+
+/* ------------------------------------------- header ------------------------------------------- */
+
+h1{
+	@include color;
+	text-align: center;
+	padding: 40px;
+	font-size: 3em;
+	margin-top: 0;
+	font-family: "food";
+	letter-spacing: 3px;	
+}
+
+/* ------------------------------------------- menus ------------------------------------------- */
+
+h3{
+	text-align: center;
+	font-size: 1.8em;
+	font-weight: normal;
+}
+
+h2{
+	color:#0A88FB;
+	margin-top: 120px;
+	font-family: "délice";
+	font-size: 4em;
+	font-weight: normal;
+}
+
+p{
+	font-family: "Segoe";
+	font-size: 1.1em;
+}	
+
+.step p:after {    
+
+  content:"";
+  display: block;
+  height: 3px;
+  background: black;
+  transition: width 300ms ease;
+  width: 0;
+}
+.step p:hover:after { 
+  width: 100%; 
+}
+
+.card{
+	margin: auto auto 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 60%;
+	box-shadow: 0px 0px 15px 5px #d0d0d0;
+	padding-bottom: 200px;
+}
+
+
+.step{
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+
+	img{
+		height: 30px;
+		width: 30%;
+		padding-top: 10px;
+	}
+
+	p{
+		font-size: 1.3em;
+		font-weight: bold;
+		margin-top:5px;
+	}
+}
+
+.dishes{
+	width: 70%;
+
+	p{
+		margin: 10px;
+	}
+}
+
+.plat{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+
+
+/* ------------------------------------------- footer ------------------------------------------- */
+footer{
+	@include color;
+	display: flex;
+	justify-content: space-between;
+	margin:0;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+
+	
+
+	a{
+		padding:18px 30px;
+		@include color;
+		&:hover{
+			animation: wiggle 300ms backwards ease-in-out infinite alternate;
+		}
+	}
+}

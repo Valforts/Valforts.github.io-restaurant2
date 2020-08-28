@@ -1,0 +1,177 @@
+$text-color:rgb(253,203,70);
+$bck-color:rgb(87,156,135);
+$hover-color:rgb(252,223,219);
+
+@font-face {
+	font-family:"Food";
+	src: url(../fonts/colon.ttf) format("truetype");
+}
+
+@font-face {
+	font-family:"note";
+	src: url(../fonts/Devonshire-Regular.ttf) format("truetype");
+}
+
+@font-face {
+	font-family:"Segoe";
+	src: url(../fonts/Segoe_Print.ttf) format("truetype");
+}
+
+@mixin color{
+	background-color: $bck-color;
+	color: $text-color;
+	a{
+		color: $text-color;
+		text-decoration: none;
+	}
+}
+
+@keyframes wiggle{
+	0%{
+		transform: translateX(2px)
+	}
+
+	100%{
+		transform: translateX(-2px)
+	}
+}
+
+body{
+	margin: 0;
+}
+
+
+/* ------------------------------------------- header ------------------------------------------- */
+
+h1{
+	@include color;
+	text-align: center;
+	padding: 40px;
+	font-size: 3em;
+	margin-top: 0;
+	font-family: "food";
+	letter-spacing: 3px;	
+}
+
+/* ------------------------------------------- menus ------------------------------------------- */
+
+
+.step p:after {    
+
+  content:"";
+  display: block;
+  height: 3px;
+  background: black;
+  transition: width 300ms ease;
+  width: 0;
+}
+.step p:hover:after { 
+  width: 100%; 
+}
+
+p{
+	font-family: "Segoe";
+	font-size: 1.1em;
+}
+
+h3{
+	text-align: center;
+	font-size: 1.8em;
+	font-weight: normal;
+}
+#fa-top{
+	margin-bottom: 0;
+	background: -webkit-linear-gradient(left, red, orange);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	font-size: 4em;
+ 
+}
+
+h2{
+	margin-top: 0;
+	font-family: "note";
+	font-size: 45px;
+	font-weight: normal;
+}	
+
+.card{
+	margin: auto auto 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $hover-color;
+	width: 60%;
+	box-shadow: 0px 0px 15px 5px #d0d0d0;
+}
+
+
+.step{
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+
+	img{
+		height: 30px;
+		width: 30%;
+		padding-top: 10px;
+	}
+
+	p{
+		
+		font-weight: bold;
+	}
+}
+
+.dishes{
+	width: 70%;
+
+	p{
+		margin: 10px;
+	}
+}
+
+.plat{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.card-bottom{
+	display: flex;
+	margin: 150px;
+	font-size: 3em;
+	align-items: baseline;
+
+
+	#fa-bottom{
+	
+	margin-right: 10px;
+	background: -webkit-linear-gradient(left, red, orange);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	
+	}
+}
+
+/* ------------------------------------------- footer ------------------------------------------- */
+footer{
+	@include color;
+	display: flex;
+	justify-content: space-between;
+	margin:0;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+
+	
+
+	a{
+		padding:18px 30px;
+		@include color;
+		&:hover{
+			animation: wiggle 300ms backwards ease-in-out infinite alternate;
+		}
+	}
+}

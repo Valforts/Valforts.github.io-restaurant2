@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Food";
+  src: url(../fonts/colon.ttf) format("truetype"); }
+@font-face {
+  font-family: "palette";
+  src: url(../fonts/KaushanScript-Regular.ttf) format("truetype"); }
+@font-face {
+  font-family: "Segoe";
+  src: url(../fonts/Segoe_Print.ttf) format("truetype"); }
+@keyframes wiggle {
+  0% {
+    transform: translateX(2px); }
+  100% {
+    transform: translateX(-2px); } }
+body {
+  margin: 0; }
+
+/* ------------------------------------------- header ------------------------------------------- */
+h1 {
+  background-color: #579c87;
+  color: #fdcb46;
+  text-align: center;
+  padding: 40px;
+  font-size: 3em;
+  margin-top: 0;
+  font-family: "food";
+  letter-spacing: 3px; }
+  h1 a {
+    color: #fdcb46;
+    text-decoration: none; }
+
+/* ------------------------------------------- menus ------------------------------------------- */
+h3 {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: normal; }
+
+h2 {
+  background: -webkit-linear-gradient(left, #509748, #C7FF88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: palette;
+  font-size: 4em;
+  font-weight: normal; }
+
+p {
+  font-family: "Segoe";
+  font-size: 1.1em; }
+
+.step p:after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: black;
+  transition: width 300ms ease;
+  width: 0; }
+
+.step p:hover:after {
+  width: 100%; }
+
+.card {
+  margin: auto auto 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  box-shadow: 0px 0px 15px 5px #d0d0d0;
+  padding-bottom: 200px; }
+
+.step {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%; }
+  .step img {
+    height: 30px;
+    width: 30%;
+    padding-top: 10px; }
+  .step p {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 5px; }
+
+.dishes {
+  width: 70%; }
+  .dishes p {
+    margin: 10px; }
+
+.plat {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+/* ------------------------------------------- footer ------------------------------------------- */
+footer {
+  background-color: #579c87;
+  color: #fdcb46;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0; }
+  footer a {
+    color: #fdcb46;
+    text-decoration: none; }
+  footer a {
+    padding: 18px 30px;
+    background-color: #579c87;
+    color: #fdcb46; }
+    footer a a {
+      color: #fdcb46;
+      text-decoration: none; }
+    footer a:hover {
+      animation: wiggle 300ms backwards ease-in-out infinite alternate; }
+
+/*# sourceMappingURL=palette.css.map */
