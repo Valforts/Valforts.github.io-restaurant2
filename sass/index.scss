@@ -72,7 +72,8 @@ h1{
 #menus{
 	display: flex;	
 	justify-content: space-around;
-	margin-bottom: 50px;
+	margin: 50px auto;
+
 }
 
 a{
@@ -161,7 +162,7 @@ a{
 	text-align: center;
 	font-size: 1.5em;
 	margin: 30px auto;
-	width: 15%;
+	width: 250px;
 	padding: 13px;
 	border-radius: 10px 10px;
 
@@ -200,5 +201,27 @@ footer{
 		&:hover{
 			animation: wiggle 300ms backwards ease-in-out infinite alternate;
 		}
+	}
+}
+
+/* ------------------------------------------- Responsive ------------------------------------------- */
+
+@media screen and (max-width: 1500px){
+
+	#menus {
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	    align-self: center;
+	    width: 84%;
+	    margin-bottom: 50px;
+	}
+
+	.card{
+		margin:30px;
+	}
+
+	.soon{
+		margin-bottom: 120px;
 	}
 }
