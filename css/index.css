@@ -154,7 +154,7 @@ footer {
       animation: wiggle 300ms backwards ease-in-out infinite alternate; }
 
 /* ------------------------------------------- Responsive ------------------------------------------- */
-@media screen and (min-width: 880px) and (max-width: 1500px) {
+@media screen and (max-width: 1500px) {
   #menus {
     display: flex;
     flex-wrap: wrap;
@@ -169,7 +169,7 @@ footer {
 
   .soon {
     margin-bottom: 120px; } }
-@media all and (max-width: 880px) {
+@media all and (max-device-width: 480px) {
   #menus {
     display: flex;
     flex-wrap: wrap;
