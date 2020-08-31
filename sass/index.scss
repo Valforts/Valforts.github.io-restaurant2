@@ -54,7 +54,6 @@ $hover-color:rgb(252,223,219);
 }
 body{
 	margin: 0;
-	background-color: blue;
 }
 /* ------------------------------------------- header ------------------------------------------- */
 
@@ -207,7 +206,7 @@ footer{
 
 /* ------------------------------------------- Responsive ------------------------------------------- */
 
-@media screen and (max-width: 1500px){
+@media screen and (min-width: 880px) and (max-width: 1500px){
 
 	#menus {
 	    display: flex;
@@ -229,7 +228,7 @@ footer{
 }
 
 
-@media all and (max-device-width: 480px){
+@media all and (max-width: 880px){
   
   #menus {
 	    display: flex;
