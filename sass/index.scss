@@ -227,25 +227,3 @@ footer{
 	}
 }
 
-
-@media all and (max-device-width: 480px){
-  
-  #menus {
-	    display: flex;
-	    flex-wrap: wrap;
-	    justify-content: center;
-	    align-self: center;
-	    width: 84%;
-	    margin-bottom: 50px;
-	}
-
-	.card{
-		margin:30px;
-		height: 30vh;
-
-	}
-
-	.soon{
-		margin-bottom: 120px;
-	}
-}
