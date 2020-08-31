@@ -114,4 +114,13 @@ footer {
     footer a:hover {
       animation: wiggle 300ms backwards ease-in-out infinite alternate; }
 
+/* ------------------------------------------- responsive ------------------------------------------- */
+@media screen and (max-width: 1500px) {
+  .card {
+    width: 90%;
+    font-size: 18px; }
+
+  .step {
+    width: 90%; } }
+
 /*# sourceMappingURL=palette.css.map */
