@@ -148,7 +148,8 @@ footer {
 /* ------------------------------------------- responsive ------------------------------------------- */
 @media screen and (max-width: 1500px) {
   .card {
-    width: 80%; }
+    width: 80%;
+    font-size: 20px; }
 
   .step {
     width: 90%; } }
