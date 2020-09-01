@@ -15,8 +15,6 @@
   font-family: "Food";
   src: url(../fonts/colon.ttf) format("truetype"); }
 @keyframes dot {
-  0% {
-    transform: tranlateY(0px); }
   100% {
     transform: translateY(-5px); } }
 @keyframes wiggle {
