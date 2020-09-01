@@ -172,7 +172,7 @@ footer {
     margin-bottom: 120px; }
 
   a .text {
-    font-size: 45px; } }
+    font-size: 40px; } }
 @media all and (max-device-width: 480px) {
   #menus {
     display: flex;
@@ -190,6 +190,12 @@ footer {
     margin-bottom: 120px; }
 
   a .text {
-    font-size: 45px; } }
+    font-size: 45px; }
+
+  .soon {
+    font-size: 20px; }
+
+  footer a {
+    font-size: 25px; } }
 
 /*# sourceMappingURL=index.css.map */
