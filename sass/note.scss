@@ -183,12 +183,18 @@ footer{
 	.card{
 		width: 90%;
 		font-size: 18px;
-
-
-
 	}
 
 	.step{
 		width: 90%;
+	}
+
+}
+
+
+@media all and (max-device-width: 480px){
+  
+	footer a{
+		font-size:25px;
 	}
 }

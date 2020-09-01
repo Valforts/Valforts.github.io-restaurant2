@@ -153,5 +153,8 @@ footer {
 
   .step {
     width: 90%; } }
+@media all and (max-device-width: 480px) {
+  footer a {
+    font-size: 25px; } }
 
 /*# sourceMappingURL=chic.css.map */
