@@ -54,7 +54,7 @@ a {
     opacity: 0.7; }
   a .text {
     transition: transform 300ms;
-    font-size: 25px; }
+    font-size: 35px; }
 
 .card {
   display: flex;
@@ -82,7 +82,8 @@ a {
   background: -webkit-linear-gradient(left, #D8852E, #8F5BFE);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "chic"; }
+  font-family: "chic";
+  font-size: 25px; }
 
 #menu-card-délice-title {
   background: -webkit-linear-gradient(left, #0431DF, #0A88FB);
@@ -97,7 +98,7 @@ a {
   font-family: palette; }
 
 #menu-card-note-subtitle {
-  padding-bottom: 30px; }
+  padding-bottom: 55px; }
 
 #menu-card-chic-subtitle {
   color: #D8852E; }
@@ -168,7 +169,10 @@ footer {
     margin: 30px; }
 
   .soon {
-    margin-bottom: 120px; } }
+    margin-bottom: 120px; }
+
+  a .text {
+    font-size: 45px; } }
 @media all and (max-device-width: 480px) {
   #menus {
     display: flex;
@@ -183,6 +187,9 @@ footer {
     height: 30vh; }
 
   .soon {
-    margin-bottom: 120px; } }
+    margin-bottom: 120px; }
+
+  a .text {
+    font-size: 45px; } }
 
 /*# sourceMappingURL=index.css.map */
