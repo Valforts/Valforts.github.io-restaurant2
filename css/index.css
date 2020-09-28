@@ -120,16 +120,16 @@ a {
   .soon a {
     color: #fdcb46; }
   .soon .fa-circle {
+    animation: dot 500ms backwards ease-in-out infinite alternate; }
+  .soon .circle1 {
+    animation-delay: 200ms; }
+  .soon .circle2 {
+    animation-delay: 400ms; }
+  .soon .circle3 {
+    animation-delay: 600ms; }
+  .soon .fa-circle {
     color: #fdcb46;
     font-size: 4px; }
-  .soon:hover .fa-circle {
-    animation: dot 500ms backwards ease-in-out infinite alternate; }
-  .soon:hover .circle1 {
-    animation-delay: 200ms; }
-  .soon:hover .circle2 {
-    animation-delay: 400ms; }
-  .soon:hover .circle3 {
-    animation-delay: 600ms; }
 
 /* ------------------------------------------- footer ------------------------------------------- */
 footer {

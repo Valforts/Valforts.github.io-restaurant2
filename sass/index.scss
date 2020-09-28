@@ -73,7 +73,6 @@ h1{
 	display: flex;	
 	justify-content: space-around;
 	margin: 50px auto;
-
 }
 
 a{
@@ -167,20 +166,21 @@ a{
 	border-radius: 10px 10px;
 
 	.fa-circle{
-		color: $text-color;
-		font-size:4px;
-	}
-
-		&:hover{
-			.fa-circle{
 			animation: dot 500ms backwards ease-in-out infinite alternate; }
 		  	.circle1 {
 	      	animation-delay: 200ms; }
 	      	.circle2 {
 	      	animation-delay: 400ms; }
 	      	.circle3 {
-	      	animation-delay: 600ms; }
-	}	 
+	      	animation-delay: 600ms;
+	      }
+
+	.fa-circle{
+		color: $text-color;
+		font-size:4px;
+	}
+
+		 
 }
 
 /* ------------------------------------------- footer ------------------------------------------- */
@@ -192,8 +192,6 @@ footer{
 	position: fixed;
 	width: 100%;
 	bottom: 0;
-
-	
 
 	a{
 		padding:18px 30px;
